@@ -1,0 +1,88 @@
+/*  
+    #643843
+    #99627A
+    #C88EA7
+    #E7CBCB
+ */
+
+
+.barra {
+    background-color: #643843 !important; 
+    display: flex;
+    justify-content: flex-end;
+
+}
+.pie {
+    background-color: #643843 !important;
+}
+
+.cuerpo {
+    background: linear-gradient(to right, #643843, #c88eb9) #c88eb9 !important;
+}
+body{
+    background: linear-gradient(to right, #a85f71, #c88eb9) #c88eb9
+}
+.btn{
+    background-color:  #643843 !important;
+    color: #c88eb9
+    
+}
+.jen {
+color: #c88eb9  !important;
+}
+header{
+    background: linear-gradient(to right, #a85f71, #c88eb9) #c88eb9 !important;
+
+    
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color:  #643843 !important;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+
+}
+li {
+    margin: 10px 0;
+}
+main {
+    padding: 40px;
+    text-align: center;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.titular {
+    margin-top: 20px;
+}
+
+h1.titu {
+    font-size: 2.5rem;
+}
+main {
+
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    
+    ul.sombreado {
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+    
