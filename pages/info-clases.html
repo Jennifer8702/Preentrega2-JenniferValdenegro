@@ -3,29 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info clases</title>
+    <title>Info</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #343a40; /* Fondo oscuro para todo el cuerpo */
+            color: #9dcbff6b; /* Texto blanco para contraste */
+        }
+
+        .navbar, .pie {
+            background-color: #212529; /* Un poco más oscuro para la barra de navegación y el pie */
+        }
+
+        .nav-link, .list-inline-item a {
+            color: #9dcaff; /* Color claro para enlaces */
+        }
+
+        .nav-link:hover, .list-inline-item a:hover {
+            color: #ffffff; /* Blanco al pasar el ratón por encima */
+        }
+
+        .titular {
+            background-color: #495057; /* Fondo más oscuro para el header */
+            color: #ffffff; /* Asegurar texto blanco */
+            padding: 1rem 0; /* Añadir espacio entre el contenido y los bordes del header */
+        }
+
+        .cuerpo, .pie {
+            background-color: #343a40; /* Fondo consistente con el body */
+            border-color: #484f58; /* Bordes sutiles, si son necesarios */
+        }
+
+        .fab { /* Iconos de FontAwesome */
+            color: #9dcaff;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class=" barra navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">INICIO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="./info-clases.html">Info clases</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./horarios.html">Horarios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./aranceles.html">Aranceles</a>
+                            <a class="nav-link" href="./sobre-mi.html">Sobre mí</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -52,17 +80,6 @@
                         <li>Ganas de aprender</li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <h2>Pole Exotic</h2>
-                    <h3>¿Qué necesitas?</h3>
-                    <ul class="sombreado">
-                        <li>Ropa cómoda</li>
-                        <li>Toalla personal</li>
-                        <li>Botellita de agua</li>
-                        <li>Grip y rodilleras (si tienes)</li>
-                        <li>Zapatos o medias</li>
-                    </ul>
-                </div>
             </div>
             <h2>¿Cómo serán dadas las clases?</h2>
             <h3>Clases grupales, particulares y semi-particulares</h3>
@@ -72,22 +89,15 @@
     </main>
     <footer class="pie bg-dark text-white text-center py-4">
         <div class="container">
-            <p class="text-white">Redes sociales</p>
+            <p class="text-white"></p>
             <ul class="list-inline">
                 <li class="list-inline-item">
                     <a href="https://www.instagram.com/jen_.v/" class="text-white">
-                        <i class="fab fa-instagram"></i> Instagram
-                    </a>
+                        <i class="fab fa-instagram"></i></a>
                 </li>
                 <li class="list-inline-item">
                     <a href="https://www.tiktok.com/@jennifervaldenegro?lang=es" class="text-white">
-                        <i class="fab fa-tiktok"></i> TikTok
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.youtube.com/channel/UCeEpBCcEGX61MbT0S_5_rpg" class="text-white">
-                        <i class="fab fa-youtube"></i> Youtube
-                    </a>
+                        <i class="fab fa-tiktok"></i></a>
                 </li>
             </ul>
         </div>
@@ -96,3 +106,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+

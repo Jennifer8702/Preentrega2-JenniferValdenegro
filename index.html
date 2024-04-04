@@ -7,27 +7,111 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
     
+    <style>
+        :root {
+            --color-fondo: #343a40;
+            --color-texto: #9dcbff6b;
+            --color-navbar: #212529;
+
+            --color-fondo-oscuro: #121212;
+            --color-texto-oscuro: #e0e0e0;
+            --color-navbar-oscuro: #212529;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .imagen-fondo {
+            background-image: url("./assets/inicio-pagina-final.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding-top: 56px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .difuminado {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.541);
+            backdrop-filter: blur(2px);
+            z-index: 1;
+        }
+
+        .titulo, .subtitulo {
+            z-index: 2;
+        }
+
+        .titulo {
+            font-size: 3rem;
+            color: #ffffff;
+        }
+
+        .subtitulo {
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+
+        .navbar, .redes-sociales {
+            background-color: var(--color-navbar);
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #9dcaff;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #ffffff;
+        }
+
+        .redes-sociales a {
+            color: #9dcaff; /* Asegurarse de que no hay conflictos de clase */
+        }
+        .redes-sociales a:hover {
+            color: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                --color-fondo: var(--color-fondo-oscuro);
+                --color-texto: var(--color-texto-oscuro);
+                --color-navbar: var(--color-navbar-oscuro);
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <nav class="barra  navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="contenedor container">
-            <a class="jen navbar-brand" href="./index.html">JEN POLE</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse ms-auto " id="navbarNav">
-                <ul class="navbar-nav ms-auto"> 
+            <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/info-clases.html">Info clases</a>
+                        <a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/horarios.html">Horarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/aranceles.html">Aranceles</a>
+                        <a class="nav-link" href="pages/info-clases.html">Info</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/contacto.html">Contacto</a>
@@ -36,53 +120,23 @@
             </div>
         </div>
     </nav>
-    
 
-    <header class="titular bg-light text-dark text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Soy Jennifer Valdenegro</h1>
-            <p class="lead">Pole dancer e instructora de pole sport y exotic pole.</p>
-        </div>
-    </header>
-    
-
-    <div class="cuerpo container my-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="assets/foto-inicio-paginaweb.png" alt="foto con pelo al aire" class="img-fluid rounded">
-            </div>
-            <div class="col-md-6">
-                <h2 class="mb-4">Acerca de mí</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque tortor in quam malesuada facilisis. Praesent ut diam bibendum, suscipit libero at, volutpat urna. Integer sit amet arcu eget orci porta posuere.</p>
-                <a href="pages/info-clases.html" class="btn btn-dark">Ver detalles de las clases</a>
-            </div>
-        </div>
+    <div class="imagen-fondo">
+        <div class="difuminado"></div>
+        <div class="titulo">Jennifer Valdenegro</div>
+        <div class="subtitulo">Pole dancer e instructora</div>
     </div>
 
-
-    <footer class="pie bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="text-white">Redes sociales</p>
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="https://www.instagram.com/jen_.v/" class="text-white">
-                        <i class="fab fa-instagram"></i> Instagram
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.tiktok.com/@jennifervaldenegro?lang=es" class="text-white">
-                        <i class="fab fa-tiktok"></i> TikTok
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.youtube.com/channel/UCeEpBCcEGX61MbT0S_5_rpg" class="text-white">
-                        <i class="fab fa-youtube"></i> Youtube
-                    </a>
-                </li>
-            </ul>
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/jen_.v/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@jennifervaldenegro?lang=es"><i class="fab fa-tiktok"></i></a>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
