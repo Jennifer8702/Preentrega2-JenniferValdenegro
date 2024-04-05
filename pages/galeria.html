@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+
+    <!-- Estilos Bootstrap y personalizados -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #343a40; /* Fondo oscuro para todo el cuerpo */
+            color: #9dcbff6b; /* Texto blanco para contraste */
+            margin: 0; /* Eliminar el margen predeterminado */
+            padding: 0; /* Eliminar el relleno predeterminado */
+        }
+
+        header nav {
+            background-color: #212529; /* Fondo oscuro para la barra de navegación */
+            text-align: right; /* Alineación de texto a la derecha */
+            padding: 10px; /* Espaciado para los enlaces */
+        }
+
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-left: 10px; /* Espaciado entre elementos */
+        }
+
+        header nav ul li:first-child {
+            margin-left: 0; /* Elimina el espaciado izquierdo para el primer elemento */
+        }
+
+        header nav ul li a {
+            color: #9dcbff6b; /* Color del texto */
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            color: #ffffff; /* Blanco al pasar el ratón por encima */
+        }
+
+        main {
+            background-color: #343a40; /* Fondo oscuro para el cuerpo principal */
+            color: #9dcbff6b; /* Texto blanco para contraste */
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Esto hace que los divs se ajusten automáticamente a la línea siguiente cuando no hay suficiente espacio horizontal */
+            gap: 20px; /* Espacio entre los divs */
+        }
+
+        main h1, main h2 {
+            color: #9dcbff6b; /* Texto del mismo color que el nav */
+        }
+
+        main img {
+            max-width: 100%; /* Imágenes responsivas */
+            margin-bottom: 20px; /* Espacio entre imágenes */
+        }
+
+        main > div {
+            flex: 1; /* Hace que cada div ocupe un espacio igual dentro del contenedor principal */
+        }
+
+        footer {
+            background-color: #212529; /* Fondo oscuro para el pie de página */
+            color: #9dcbff6b; /* Texto blanco para contraste */
+            padding: 10px;
+            text-align: center; /* Alineación del texto al centro */
+            position: fixed; /* Fijar el pie de página en la parte inferior de la ventana */
+            width: 100%; /* Ancho del pie de página al 100% */
+            bottom: 0; /* Colocar el pie de página en la parte inferior */
+        }
+
+        /* Estilos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            header nav {
+                text-align: center; /* Centrar los enlaces de navegación */
+            }
+
+            header nav ul {
+                display: block; /* Mostrar los enlaces de navegación uno debajo del otro */
+                text-align: center; /* Centrar los enlaces */
+            }
+
+            header nav ul li {
+                display: block; /* Mostrar cada enlace en un bloque separado */
+                margin: 10px 0; /* Añadir espacio entre los enlaces */
+            }
+
+            main {
+                padding: 10px; /* Reducir el espacio entre el borde y el contenido principal */
+            }
+
+            main > div {
+                flex: 1 0 100%; /* Hacer que cada div ocupe todo el ancho disponible */
+            }
+
+            main img {
+                width: 100%; /* Hacer que las imágenes ocupen todo el ancho disponible */
+            }
+        }
+
+        /* Estilos para pantallas medianas y grandes */
+        @media (min-width: 769px) {
+            main {
+                padding: 20px; /* Restaurar el espacio de relleno original */
+            }
+
+            main > div {
+                flex: 1; /* Restaurar la distribución de espacio igual */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobre-mi.html">Sobre mi</a></li>
+                <li><a href="./info-clases.html">Info</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>En esta sección les muestro un poco de mi trabajo en fotos y videos</h1>
+        <div>
+            <h2>Fotos sport</h2>
+            <img src="../assets/1.jpg" alt="">
+            <img src="../assets/2.jpg" alt="">
+            <img src="../assets/3.jpg" alt="">
+            <img src="../assets/4.jpg" alt="">
+        </div>
+        <div>
+            <h2>Algunas fotos de sport en estudio</h2>
+            <img src="../assets/foto-estudio1.jpg" alt="">
+            <img src="../assets/foto-estudio2.jpeg" alt="">
+            <img src="../assets/foto-estudio3.jpeg" alt="">
+        </div>
+        <div>
+            <h2>Muestra de pole sport 2019</h2>
+            <img src="../assets/muestra-sport1.jpeg" alt="">
+            <img src="../assets/muestra-sport2.jpeg" alt="">
+            <img src="../assets/muestra-sport3.jpeg" alt="">
+            <img src="../assets/muestra-sport4.jpeg" alt="">
+        </div>
+        <div>
+            <img src="../assets/muestra-sport5.jpeg" alt="">
+            <img src="../assets/muestra-sport6.jpeg" alt="">
+        </div>
+        <div>
+            <h2>Unas exóticas</h2>
+            <img src="../assets/foto-estudio4.jpg" alt="">
+            <img src="../assets/foto-estudio5.jpg" alt="">
+            <img src="../assets/foto-estudio6.jpg" alt="">
+            <img src="../assets/foto-estudio7.jpg" alt="">
+        </div>
+        <div>
+            <h2>En esta les dejo una jeni bebé</h2>
+            <img src="../assets/jeni-bebe1.jpeg" alt="">
+            <img src="../assets/jeni-bebe2.jpeg" alt="">
+            <img src="../assets/jeni-bebe3.jpeg" alt="">
+        </div>
+    </main>
+    <footer>
+        <p>Derechos de autor © 2024 Galería Fotográfica. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+

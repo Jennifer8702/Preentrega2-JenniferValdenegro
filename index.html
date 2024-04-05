@@ -60,33 +60,41 @@
         }
 
         .titulo {
-            font-size: 3rem;
-            color: #ffffff;
+            font-size: 4rem; /* Tamaño de fuente modificado */
+            color: var(--color-texto); /* Color de los títulos */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombrero aplicado */
         }
 
         .subtitulo {
             font-size: 1.5rem;
-            color: #ffffff;
+            color: var(--color-texto); /* Color de los subtítulos */
         }
 
         .navbar, .redes-sociales {
-            background-color: var(--color-navbar);
+            background-color: var(--color-fondo); /* Cambio de color a fondo de la barra de navegación */
             transition: background-color 0.3s;
             text-align: center;
         }
 
         .navbar-dark .navbar-nav .nav-link {
-            color: #9dcbff5e;
+            color: #9dcaff;
         }
         .navbar-dark .navbar-nav .nav-link:hover {
             color: #ffffff;
         }
 
-        .redes-sociales a {
-            color: #9dcbff5e; /* Asegurarse de que no hay conflictos de clase */
+        .redes-sociales {
+            margin-top: 20px; /* Espacio entre el contenido y los iconos */
         }
+
+        .redes-sociales a {
+            color: #9dcbff5e; /* Color de los iconos */
+            margin: 0 10px; /* Espacio entre los iconos */
+            font-size: 24px; /* Tamaño de los iconos */
+        }
+
         .redes-sociales a:hover {
-            color: #ffffff;
+            color: #ffffff; /* Color al pasar el mouse sobre los iconos */
         }
 
         @media (prefers-color-scheme: dark) {
@@ -100,8 +108,8 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+    <nav class="barra navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="contenedor container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -114,6 +122,9 @@
                         <a class="nav-link" href="pages/info-clases.html">Info</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -124,17 +135,23 @@
     <div class="imagen-fondo">
         <div class="difuminado"></div>
         <div class="titulo">Jennifer Valdenegro</div>
-        <div class="subtitulo">Pole dancer e instructora</div>
-        <div class="subtitulo"><a href="https://www.instagram.com/jen_.v/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@jennifervaldenegro?lang=es"><i class="fab fa-tiktok"></i></a></div>
+        <div class="subtitulo">¡Bienvenidos a mi página web!</div>
+        <div class="subtitulo">Soy pole dancer e instructora. Aquí encontrarás información sobre mis clases de pole dance.</div>
     </div>
 
     <footer>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/jyv.poledance/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@jennifervaldenegro?lang=es"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCeEpBCcEGX61MbT0S_5_rpg"><i class="fab fa-youtube"></i></a>
+            <!-- Agrega más enlaces y iconos según tus redes sociales -->
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 
